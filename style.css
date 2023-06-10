@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+/* we should give this css file name as "style.css" */
+.container{
+ width: 100%;  
+ /* view height- the 100% height of device viewing */
+ height: 100vh; 
+ position: relative;
+ background-color: #ffffff;
+
+}
+/* make content in same line- nav */
+.navbar{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.logo{
+    width: 160px;
+    margin-top: 10px;
+    /* extra */
+    margin-left: 0.5%;
+}
+
+.listitem{
+    display:inline-block;
+    /* if there still have any dots */
+    list-style: none; 
+    margin: 10px 20px;
+}
+    /* remove underlines */
+    .links{
+        text-decoration: none;
+        font-weight: bold;
+        color: #000000;
+    }
+/* psuedo class to mouse pointer -to change colour when mouse pointer placed on it */
+.links:hover{
+color: #f22613;
+}
+
+.title{
+    margin-left: 6%;
+    margin-top: 10%;
+}
+
+.title_h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.title_span {
+    color: #fcba03;
+    font-size: 50px;
+}
+.download{
+    background-color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 8px;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}
+
+.imgGroup{ 
+ position: absolute;
+ height: 100%;
+ bottom: 0px;
+ left: 50%;
+ transform: translate(-50%);
+ transition: bottom 1s, left 2s;
+}
+
+.images:hover #shape{
+    bottom: 70px;
+}
+
+.images:hover #boy{
+    left:40%;
+}
+
+#about{
+    margin: 19% 8% 0px 8%
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 30px;
+
+}
+
+.heading span{
+    font-size: 20px;
+    color:rgb(32, 216, 155);
+}
+
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* 1fr= 50% of entire space */
+    gap: 8rem;
+    margin-top: 2rem;
+}
+
+.about-img img{
+    width: 24rem;
+    height:18rem;
+    border-radius:1rem ;
+}
+
+.about-details{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+.informations{
+    margin: 1rem 0 0 0;
+}
+.info-box{
+    display: flex;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+
+/* check this */
+.info-box span{
+margin-left: 1rem;
+}
+html{
+    scroll-behavior:smooth ;
+}
+
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+/* give property to a tag inside div */
+.skill-img img{
+      width: 80%;
+      object-position:center;
+      padding-left: 8rem;
+      padding-bottom: 2rem;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+/* style to h3 and span inside bar container-this is giving style to both tags at same time */
+.bar-container h3,span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: #0d0c0c;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.html-bar{
+    background-color: #f28b1e;
+    width:95%;
+}
+
+.css-bar{
+    background-color: #f28b1e;
+    width:88%;
+}
+
+.js-bar{
+    background-color: #f28b1e;
+    width:89%;
+}
+
+.react-bar{
+    background-color: #f28b1e;
+    width:85%;
+}
+
+/* iconset */
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+.icon,.up-arrow{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon i{
+    font-size: 27px;
+    color: #000000;
+}
+.icon:hover{
+    float: right;
+    background-image: linear-gradient(to bottom right,yellow,orange,rgb(224, 77, 77));
+}
+
+.icon:hover i{
+    color:white;
+    animation: shake 0.25s;
+}
+
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+
+footer{
+    margin: 3rem 0px;
+}
+
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right,yellow,orange,rgb(224, 77, 77));
+    margin: 0px 10px 50px 0px;
+}
+
+.up-arrow:hover i{
+    color:white;
+}
